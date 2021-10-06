@@ -5,7 +5,7 @@ export const Header = () => {
     <div style={{ position: "sticky", top: "0px", zIndex: "100" }}>
       <nav className="navigation">
         <h1 className="nav-brand" style={{ textAlign: "center" }}>
-          My Cart
+          Doodle-com
         </h1>
         <ul>
           <li>

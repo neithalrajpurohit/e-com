@@ -1,3 +1,7 @@
 export const Wishlist = () => {
-  return <h1>Wishlist</h1>;
+  return (
+    <>
+      <h1>Wishlist</h1>
+    </>
+  );
 };

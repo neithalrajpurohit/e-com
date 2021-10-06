@@ -8,9 +8,6 @@ export const Cart = () => {
   }
   return (
     <div className="card-row">
-      <div>
-        <h1>Welcome to cart page.</h1>
-      </div>
       {cartitems.map((items) => (
         <div className="card">
           <img src={items.image} alt="images" style={{ width: "230px" }} />

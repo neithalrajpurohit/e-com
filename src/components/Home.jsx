@@ -7,7 +7,6 @@ export const Home = () => {
   const { setCartitems } = useCart();
   return (
     <>
-      <h1>Welcome to home page!</h1>
       <div className="card-row">
         {allProducts.map((item) => (
           <div className="card">
