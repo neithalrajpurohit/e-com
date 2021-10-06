@@ -7,14 +7,24 @@ export const Cart = () => {
     );
   }
   return (
-    <div>
-      <h1>Welcome to cart page.</h1>
+    <div className="card-row">
+      <div>
+        <h1>Welcome to cart page.</h1>
+      </div>
       {cartitems.map((items) => (
-        <div>
-          <img src={items.image} alt="images" />
+        <div className="card">
+          <img src={items.image} alt="images" style={{ width: "230px" }} />
           <h1>{items.brandnName}</h1>
+          <p>
+            <strong>Rs. {items.offeredPrice}</strong>
+          </p>
           <div>{items.description}</div>
-          <button onClick={() => deleteHandler(items)}>Delete</button>
+          <button
+            onClick={() => deleteHandler(items)}
+            className="btn btn-outline-primary"
+          >
+            Delete
+          </button>
         </div>
       ))}
     </div>
