@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 
 export const Home = () => {
   const navigate = useNavigate();
-  const { setCartitems } = useCart();
+  const { setCartitems, setWishlist } = useCart();
   return (
     <>
       <div className="card-row">
@@ -24,6 +24,15 @@ export const Home = () => {
               className="btn btn-outline-primary"
             >
               Add to Cart
+            </button>
+            <button
+              onClick={() => {
+                navigate("/wishlist");
+                setWishlist((items) => [...items, item]);
+              }}
+              className="btn btn-outline-primary"
+            >
+              Add to Wishlist
             </button>
           </div>
         ))}
