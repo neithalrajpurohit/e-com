@@ -135,3 +135,11 @@
   background-color: #5a67d8;
   color: white;
 }
+.suraj {
+  text-decoration: line-through;
+  font-size: 0.75rem;
+  display: inline;
+}
+.lol {
+  display: inline;
+}
