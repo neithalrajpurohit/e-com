@@ -1,6 +1,10 @@
 import { useCart } from "../cartcontext";
+import { useState } from "react";
+import { Checkout } from "./Checkout";
 export const Cart = () => {
   const { cartitems, setCartitems } = useCart();
+  const [count, setCount] = useState(0);
+
   function deleteHandler(items) {
     setCartitems((prevValue) =>
       prevValue.filter((product) => product !== items)
@@ -16,6 +20,21 @@ export const Cart = () => {
             <strong>Rs. {items.offeredPrice}</strong>
           </p>
           <div>{items.description}</div>
+          <div>
+            <button
+              onClick={() => setCount((count) => count + 1)}
+              className="btn btn-outline-primary"
+            >
+              +
+            </button>
+            {count}
+            <button
+              onClick={() => setCount((count) => count - 1)}
+              className="btn btn-outline-primary"
+            >
+              -
+            </button>
+          </div>
           <button
             onClick={() => deleteHandler(items)}
             className="btn btn-outline-primary"
@@ -24,6 +43,9 @@ export const Cart = () => {
           </button>
         </div>
       ))}
+      <div>
+        <Checkout />
+      </div>
     </div>
   );
 };

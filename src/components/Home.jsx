@@ -5,6 +5,7 @@ import { useNavigate } from "react-router";
 export const Home = () => {
   const navigate = useNavigate();
   const { setCartitems, setWishlist } = useCart();
+
   return (
     <>
       <div className="card-row">
