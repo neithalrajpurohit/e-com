@@ -1,4 +1,4 @@
-import { useCart } from "../cartcontext";
+import { useCart } from "../context/cartcontext";
 import { useNavigate } from "react-router";
 
 export const Wishlist = () => {

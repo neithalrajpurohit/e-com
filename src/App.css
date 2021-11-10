@@ -1,51 +1,3 @@
-/* .card-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.navigation {
-  background-color: khaki;
-  color: lightcoral;
-  padding: 1rem;
-  border: 1px solid transparent;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.navigation ul {
-  list-style: none;
-  margin: 0;
-  display: flex;
-}
-.items-link {
-  text-decoration: none;
-  color: teal;
-}
-.navigation .btn {
-  background-color: #fff;
-  color: #5a67d8;
-  cursor: pointer;
-  padding: 0.5rem;
-  border-radius: 10px;
-}
-.btn {
-  outline: none;
-  margin: 0.25rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  color: var(--text-color);
-  font-size: 1rem;
-  font-weight: 400;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.2s, color 0.2s;
-}
-.btn-secondary {
-  background-color: #6c757d;
-} */
 .card-row {
   display: flex;
   flex-direction: row;
@@ -142,4 +94,64 @@
 }
 .lol {
   display: inline;
+}
+.style-login {
+  margin: auto;
+  text-align: center;
+  align-items: middle;
+  border: 1px solid #bfdbfe;
+  height: auto;
+  width: 20rem;
+  border-radius: 10px;
+  background-color: #eff6ff;
+  margin-top: 8rem;
+}
+.input-login {
+  margin-bottom: 1rem;
+  font-size: 15px;
+  height: 25px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding-left: 13px;
+}
+.login-btn {
+  background-color: #3b82f6;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  color: white;
+}
+.signup-cmp {
+  margin: auto;
+  text-align: center;
+  align-items: middle;
+  border: 1px solid #bfdbfe;
+  height: auto;
+  width: 20rem;
+  border-radius: 10px;
+  background-color: #eff6ff;
+}
+.auth-container {
+  margin-top: 7rem;
+}
+.input-style {
+  margin-bottom: 1rem;
+  font-size: 15px;
+  height: 25px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding-left: 13px;
+}
+.para-style {
+  color: gray;
+  opacity: 100%;
+}
+.signup-btn {
+  background-color: #3b82f6;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  color: white;
 }

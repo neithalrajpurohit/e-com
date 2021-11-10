@@ -25,20 +25,13 @@ export const Header = () => {
           </li>
           <li>
             <button
-              onClick={() => navigate("/Login")}
+              onClick={() => navigate("/login")}
               className="btn btn-secondary"
             >
               Login
             </button>
           </li>
-          <li>
-            <button
-              onClick={() => navigate("/Signin")}
-              className="btn btn-secondary"
-            >
-              Sign in
-            </button>
-          </li>
+          
         </ul>
       </nav>{" "}
     </div>

@@ -1,24 +1,38 @@
-import { Routes } from "react-router";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import { Header } from "./components/Header";
 import { Cart } from "./components/Cart";
 import { Home } from "./components/Home";
 import { Wishlist } from "./components/Wishlist";
-import { Login } from "./components/Login";
-import { useState } from "react";
+
+import { PrivateRoute } from "./components/PrivateRoute";
+import { Login } from "./pages/LoginPage";
+import { Signup } from "./pages/SignupPage";
 
 function App() {
-  // eslint-disable-next-line
-  const [login, setLogin] = useState(true);
   return (
     <div>
       <Header />
       <Routes>
-        <Routes path="/" element={<Home />} />
-        {login && <Routes path="/cart" element={<Cart />} />}
-        {login && <Routes path="/wishlist" element={<Wishlist />} />}
-        {!login && <Routes path="/cart" element={<Login />} />}
-        {!login && <Routes path="/wishlist" element={<Login />} />}
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/cart"
+          element={
+            <PrivateRoute>
+              <Cart />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/wishlist"
+          element={
+            <PrivateRoute>
+              <Wishlist />
+            </PrivateRoute>
+          }
+        />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </div>
   );

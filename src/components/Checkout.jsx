@@ -1,9 +1,9 @@
-import { useCart } from "../cartcontext";
+import { useCart } from "../context/cartcontext";
 
 export const TotalPrice = (cartitems) => {
-  let { totalAmount, setTotalAmount } = useCart();
+  let { totalAmount, setTotalAmount,count } = useCart();
   let myTotalAmount = cartitems?.reduce(
-    (acc, item) => acc + item.offeredPrice,
+    (acc, item) => acc + item.offeredPrice*count,
     0
   );
   setTotalAmount(myTotalAmount);
@@ -11,7 +11,8 @@ export const TotalPrice = (cartitems) => {
 };
 
 export const Checkout = () => {
-  let { cartitems } = useCart();
+  let { cartitems,totalAmount} = useCart();
+
   return (
     <div
       className="card"
@@ -36,7 +37,8 @@ export const Checkout = () => {
       <div>
         <h3>Total Amount = ₹{TotalPrice(cartitems)}</h3>
       </div>
-      <button className="btn btn-outline-primary">Place Order</button>
+      {totalAmount >0 && <button className="btn btn-outline-primary"  >Place Order</button>}
+
     </div>
   );
 };

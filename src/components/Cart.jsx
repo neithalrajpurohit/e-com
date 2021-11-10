@@ -1,9 +1,9 @@
-import { useCart } from "../cartcontext";
-import { useState } from "react";
+import { useCart } from "../context/cartcontext";
+
 import { Checkout } from "./Checkout";
 export const Cart = () => {
-  const { cartitems, setCartitems } = useCart();
-  const [count, setCount] = useState(0);
+  const { cartitems, setCartitems,count,setCount } = useCart();
+
 
   function deleteHandler(items) {
     setCartitems((prevValue) =>

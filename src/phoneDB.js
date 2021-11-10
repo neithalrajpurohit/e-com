@@ -10,6 +10,7 @@ const allProducts = [
     offeredPrice: 1689,
     actualPrice: 2599,
     wishlist: false,
+    quantity: 0,
   },
   {
     id: uuidv4(),
@@ -20,6 +21,7 @@ const allProducts = [
     offeredPrice: 628,
     actualPrice: 1849,
     wishlist: false,
+    quantity: 0,
   },
   {
     id: uuidv4(),
@@ -30,6 +32,7 @@ const allProducts = [
     offeredPrice: 1689,
     actualPrice: 2599,
     wishlist: false,
+    quantity: 0,
   },
   {
     id: uuidv4(),
@@ -40,6 +43,7 @@ const allProducts = [
     offeredPrice: 584,
     actualPrice: 1299,
     wishlist: false,
+    quantity: 0,
   },
   {
     id: uuidv4(),
@@ -50,6 +54,7 @@ const allProducts = [
     offeredPrice: 1689,
     actualPrice: 2599,
     wishlist: false,
+    quantity: 0,
   },
   {
     id: uuidv4(),
@@ -60,6 +65,7 @@ const allProducts = [
     offeredPrice: 1689,
     actualPrice: 2599,
     wishlist: false,
+    quantity: 0,
   },
 ];
 

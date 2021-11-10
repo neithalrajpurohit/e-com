@@ -1,10 +1,12 @@
 import { createContext, useContext, useState } from "react";
 export const Cartcontext = createContext();
 
-export function CartProvider({ children }) {
+function CartProvider({ children }) {
   const [cartitems, setCartitems] = useState([]);
   const [wishlist, setWishlist] = useState([]);
   const [totalAmount, setTotalAmount] = useState([]);
+  const [count, setCount] = useState(1);
+
   return (
     <Cartcontext.Provider
       value={{
@@ -14,6 +16,8 @@ export function CartProvider({ children }) {
         setWishlist,
         totalAmount,
         setTotalAmount,
+        count,
+        setCount,
       }}
     >
       {children}
