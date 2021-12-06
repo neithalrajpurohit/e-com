@@ -3,10 +3,10 @@ import { v4 as uuidv4 } from "uuid";
 const allProducts = [
   {
     id: uuidv4(),
-    brandnName: "Roadster",
+    brandnName: "Peter England",
     description: "Slim Fit Casual shirt",
     image:
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1291760/2017/12/5/11512469309068-Highlander-Dark-Green-Slim-Fit-Casual-Shirt-5071512469308877-3.jpg",
+      "https://rukminim1.flixcart.com/image/540/648/ktx9si80/shirt/8/f/s/40-xmss11580-b4-parx-original-imag75vsss7pfez4.jpeg?q=50",
     offeredPrice: 1689,
     actualPrice: 2599,
     wishlist: false,
@@ -36,7 +36,7 @@ const allProducts = [
   },
   {
     id: uuidv4(),
-    brandnName: "Roadster",
+    brandnName: "John Players",
     description: "Regular Fit Casual shirt",
     image:
       "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2230204/2021/3/16/b93f84ed-41cd-4f2b-bb52-f2b67f8c6c2d1615874312574-Roadster-Men-Blue--Black-Regular-Fit-Checked-Casual-Shirt-74-1.jpg",
@@ -47,10 +47,10 @@ const allProducts = [
   },
   {
     id: uuidv4(),
-    brandnName: "Roadster",
+    brandnName: "Lee cooper",
     description: "Slim Fit Casual shirt",
     image:
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1291760/2017/12/5/11512469309068-Highlander-Dark-Green-Slim-Fit-Casual-Shirt-5071512469308877-3.jpg",
+      "https://rukminim1.flixcart.com/image/540/648/k7nnrm80/shirt/e/n/u/xl-sksh-bb110-xl-ma-fubar-original-imafpuajnhvkdst3.jpeg?q=50",
     offeredPrice: 1689,
     actualPrice: 2599,
     wishlist: false,
@@ -58,10 +58,10 @@ const allProducts = [
   },
   {
     id: uuidv4(),
-    brandnName: "Roadster",
+    brandnName: "Basics",
     description: "Slim Fit Casual shirt",
     image:
-      "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1291760/2017/12/5/11512469309068-Highlander-Dark-Green-Slim-Fit-Casual-Shirt-5071512469308877-3.jpg",
+      "https://rukminim1.flixcart.com/image/540/648/kq8dua80/shirt/f/b/6/m-ready-colorwings-original-imag4afggrb8aj3w.jpeg?q=50",
     offeredPrice: 1689,
     actualPrice: 2599,
     wishlist: false,
